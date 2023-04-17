@@ -1,5 +1,3 @@
-// import {ReactComponent as notFound} from "@/assets/images/notFound.svg";
-// import {ReactComponent as notFound} from "@/assets/images/Group.svg";
 import notFound from "../assets/images/not-found.svg";
 import Property from "@/components/Property";
 import { baseUrl, fetchApi } from "@/utils/fetchApi";
@@ -29,7 +27,7 @@ const Search = ({properties}) => {
         onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
       >
         <Text>Search Property By Filters</Text>
-        <Icon paddingLeft="2" w="7" as={BsFilter}></Icon>
+        <Icon paddingleft="2" w="7" as={BsFilter}></Icon>
       </Flex>
       {searchFilters && <Filters />}
       <Text fontSize="2xl" p="4" fontWeight="bold">
