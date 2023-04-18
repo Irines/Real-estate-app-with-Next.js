@@ -50,7 +50,7 @@ const ImageScrollbar = ({ data }) => (
         <Image
           alt="property"
           placeholder="blur"
-          blurDataURL={preloadedImage}
+          blurDataURL={item.url}
           src={item.url}
           width="1000"
           height="600"
