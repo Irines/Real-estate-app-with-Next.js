@@ -26,11 +26,6 @@ export default function Filters() {
   const [lastQuery, setLastQuery] = useState({});
   const router = useRouter();
 
-  const closeSearchLocation = () => {
-    setSearchTerm("");
-    setShowLocations(!showLocations);
-  };
-
   const searchProperties = (filterValues) => {
     const path = router.pathname;
     const { query } = router;
@@ -56,8 +51,8 @@ export default function Filters() {
         setLoading(false);
         setLocationData(data?.hits);
       };
-
       fetchData();
+      
     } else {
       if ("locationExternalIDs" in lastQuery) {
         let updatedQuery = {...lastQuery};

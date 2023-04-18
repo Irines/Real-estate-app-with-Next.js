@@ -1,7 +1,7 @@
 import notFound from "../assets/images/not-found.svg";
 import Property from "@/components/Property";
 import { baseUrl, fetchApi } from "@/utils/fetchApi";
-import Image from "next/image";
+import Image from 'next/legacy/image';
 import { BsFilter } from "react-icons/bs";
 const { default: Filters } = require("@/components/Filters");
 const { Flex, Text, Icon, Box } = require("@chakra-ui/react");
