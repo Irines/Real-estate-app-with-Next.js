@@ -27,13 +27,13 @@ const Property = ({
   <Link href={`property/${externalID}`} passHref>
     <Flex
       flexWrap="wrap"
-      w="420px"
+      w={[360, 420, 420]}
       p="5"
       paddingTop="0"
       justifyContent="flex-start"
       cursor="pointer"
     >
-      <Box w="400px" h="260px">
+      <Box h="260px" w={[360, 400, 400]}>
         <Image
           src={coverPhoto ? coverPhoto.url : defaultImage}
           placeholder="blur"
@@ -42,6 +42,7 @@ const Property = ({
           height="260"
           alt="apartment photo"
           style={{ objectFit: "cover", height: "260px", width: "400px" }}
+          sizes="(max-width:390px) 360px, (max-width:1024px) 400px, 400px"
         ></Image>
       </Box>
       <Box w="full">
